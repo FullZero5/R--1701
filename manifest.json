@@ -1,0 +1,31 @@
+{
+    "manifest_version": 2,
+    "name": "Cascade",
+    "description": "Joke, browser application simulating virus RС-1701 (Cascade)",
+    "version": "1.0",
+    "browser_action": {
+        "default_icon": {
+          "16": "images/icon-16x16.png",
+          "32": "images/icon-32x32.png",
+          "48": "images/icon-48x48.png",
+          "128": "images/icon-120x120.png"
+        },
+        "default_popup": "popup.html"
+    },
+    "content_scripts": [
+        {
+          "matches": ["http://*/*","https://*/*"],
+          "js": ["jquery.js","app.js"]
+        }
+    ],
+    "author": "FullZero",
+    "icons": {
+        "16": "images/icon-16x16.png",
+        "32": "images/icon-32x32.png",
+        "48": "images/icon-48x48.png",
+        "128": "images/icon-120x120.png"
+      },
+    "permissions": [
+        "activeTab"
+    ]
+}
