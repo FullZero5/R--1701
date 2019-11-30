@@ -1,5 +1,4 @@
 $(document).ready(function(){
-    $('head').append('<style type="text/css">span{-webkit-transition:all 10s ease-in;transition:all 10s ease-in;display:inline-block;}.fallen{-webkit-transform:translate(0,1000px);transform:translate(0,1000px);}p{margin:3em 5em;}</style>');
     var p = $('p');
     p.each(function(){
         var t = $(this).text().replace(/\s/g, unescape('%a0')); 
